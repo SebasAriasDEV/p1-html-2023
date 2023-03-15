@@ -1,0 +1,82 @@
+* {
+  font-family: "Poppins, sans-serif";
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: teal;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+/* ********* LOGO ****** */
+.logo {
+  font-size: 32px;
+}
+
+/* ********* MENU ****** */
+li {
+  list-style: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 1em;
+}
+.menu li {
+  padding: 5px 14px;
+}
+.menu li:hover {
+  background-color: #9cebeb;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+/* ********* TEXT FLEXBOX ****** */
+.test-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 300;
+  background-color: rgb(211, 211, 211);
+  /* align-items: stretch; */
+}
+
+.test-menu {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1em;
+}
+
+.red {
+  background-color: red;
+  font-size: 32px;
+  /* height: 100px;
+  width: 100px; */
+}
+
+.blue {
+  background-color: blue;
+  /* height: 100px;
+  width: 100px; */
+}
+
+.yellow {
+  background-color: yellow;
+  /* height: 100px;
+  width: 100px;*/
+}
+
+.green {
+  background-color: green;
+  /* height: 100px;
+  width: 100px; */
+}
