@@ -1,40 +1,75 @@
-
 /* ********* GENERAL FLEX LAYOUT ******* */
 .flex-layout {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   height: calc(100% - 60px);
   padding: 0 5%;
 }
 
-.flex-layout > h1,
+.flex-layout h1,
 h2 {
   text-align: start;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.flex-layout > h1 {
+.flex-layout h1 {
   font-size: 100px;
-  margin: 10px 0px;
   color: var(--color-deep-blue);
 }
-.flex-layout > h2 {
+.flex-layout h2 {
   font-size: 32px;
-  margin: 10px auto;
   color: var(--color-teal);
 }
 
 /* ********* HERO SECTIONS  ******* */
 @keyframes heroColor {
-  0%  { color: var(--color-deep-blue);}
-  25% { color: var(--color-blue-teal);}
-  50% { color: var(--color-teal);}
-  75% { color: var(--color-light-teal);}
-  100% { color: var(--color-deep-blue);}
+  0% {
+    color: var(--color-deep-blue);
+  }
+  25% {
+    color: var(--color-blue-teal);
+  }
+  50% {
+    color: var(--color-teal);
+  }
+  75% {
+    color: var(--color-light-teal);
+  }
+  100% {
+    color: var(--color-deep-blue);
+  }
 }
 
-.hero-section > h1:nth-child(2) {
-  animation-name: heroColor;
-  animation-duration: 4s;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.hero-section > span > h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.3rem solid orange;
+  /* padding: 1.5rem; */
+  animation: typing 2s steps(30, end), blink-caret 0.5s infinite;
+}
+
+.technologies-section {
+  background-color: var(--color-light-teal);
+}
+
