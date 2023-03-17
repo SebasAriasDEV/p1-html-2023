@@ -1,11 +1,40 @@
-.hero-section {
-    display: flex;
-    background-color: grey;
-    flex-direction: column;
-    justify-content: center;
-    
+
+/* ********* GENERAL FLEX LAYOUT ******* */
+.flex-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100% - 60px);
+  padding: 0 5%;
 }
 
-.hero-section > h1,h2 {
-    text-align: center;
+.flex-layout > h1,
+h2 {
+  text-align: start;
+}
+.flex-layout > h1 {
+  font-size: 100px;
+  margin: 10px 0px;
+  color: var(--color-deep-blue);
+}
+.flex-layout > h2 {
+  font-size: 32px;
+  margin: 10px auto;
+  color: var(--color-teal);
+}
+
+/* ********* HERO SECTIONS  ******* */
+@keyframes heroColor {
+  0%  { color: var(--color-deep-blue);}
+  25% { color: var(--color-blue-teal);}
+  50% { color: var(--color-teal);}
+  75% { color: var(--color-light-teal);}
+  100% { color: var(--color-deep-blue);}
+}
+
+.hero-section > h1:nth-child(2) {
+  animation-name: heroColor;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
 }
