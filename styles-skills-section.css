@@ -1,0 +1,11 @@
+/* ******* SKILLS SECTION ***************/
+#skills-sect {
+    padding: 30px var(--horizontal-padding);
+  }
+  
+  .skill-box {
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px var(--color-grey);
+    height: 220px;
+    width: 220px;
+  }
