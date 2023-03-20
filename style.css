@@ -15,39 +15,5 @@ html, body {
 }
 
 * {
-  font-family: "Poppins, sans-serif";
-}
-
-/* ******** NAVBAR ********* */
-.navbar {
-  display: flex;
-  background-color: var(--color-blue-teal);
-  padding: 0px 15px;
-  justify-content: flex-end;
-  height: 60px;
-  color: white;
-}
-
-/* Nav Links */
-.nav-link {
-  text-align: center;
-  width: 110px;
-  line-height: 60px;
-}
-
-.nav-link:hover {
-  background-color: var(--color-deep-blue);
-}
-
-.navbar > a {
-  color: white;
-  text-decoration: none;
-}
-
-.logo {
-  color: white;
-  margin-right: auto;
-  line-height: 60px;
-  font-size: 24px;
-  font-weight: bold;
+  /* font-family: "Poppins, sans-serif"; */
 }
