@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sebastian Arias Developer</title>
 
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Asap"
+    />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -15,11 +20,11 @@
     />
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style_hero_section.css" />
+    <!-- <link rel="stylesheet" href="style_hero_section.css" /> -->
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-light fixed-top" data-bs-theme="light">
+      <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Sebastian Arias</a>
           <button
@@ -33,10 +38,15 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home-sect">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home-sect"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#skills-sect">Skills</a>
@@ -45,7 +55,7 @@
                 <a class="nav-link" href="#port-sect">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact-sect" >Contact</a>
+                <a class="nav-link" href="#contact-sect">Contact</a>
               </li>
             </ul>
           </div>
@@ -53,13 +63,57 @@
       </nav>
     </header>
     <section id="home-sect" class="flex-layout hero-section">
-      <h1>I'm a</h1>
-      <span>
-        <h1>Full Stack Developer</h1>
-      </span>
+      <div class="row">
+        <div class="col col-md-4">
+          <img
+            class="img-fluid rounded"
+            src="assets/Profile_picture.jpeg"
+            alt="Profile"
+          />
+        </div>
+        <div
+          class="col col-md-8 greeting-message d-flex flex-column justify-content-center align-items-baseline"
+        >
+          <h1>Hello, I'm Sebastian</h1>
+          <h1>Full Stack Developer, Entrepaneur & Ex-Finance Lead</h1>
+          <button class="btn btn-primary">Hire me</button>
+        </div>
+      </div>
     </section>
-    <section id="skills-sect" class="flex-layout technologies-section">
-      <h1>Technologies</h1>
+    <section id="skills-sect" class="skills-section">
+      <div class="row">
+        <div class="col">
+          <h1 class="section-title">Technologies</h1>
+          <h3 class="section-subtitle">
+            Expertise in a wide range of techologies and skills
+          </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col d-flex gap-4 justify-content-around flex-wrap mt-4">
+          <div class="skill-box d-flex flex-column align-items-center justify-content-end p-2">
+            <img class="img-fluid overflow-auto p-3" src="assets/nodo-js.png" alt="">
+            <h3 style="text-align: center;">Node JS</h3>
+            <p style="text-align: center;">Back-end applications, server-side & DB.</p>
+          </div>
+          <div class="skill-box d-flex flex-column align-items-center justify-content-end p-2">
+            <img class="img-fluid overflow-auto p-3" src="assets/Flutter.png" alt="">
+            <h3 style="text-align: center;">Flutter</h3>
+            <p style="text-align: center;">Mobile applications, ready for multiple devices.</p>
+          </div>
+          <div class="skill-box d-flex flex-column align-items-center justify-content-end p-2">
+            <img class="img-fluid overflow-auto p-3" src="assets/HTML5_Badge.svg" alt="">
+            <h3 style="text-align: center;">Html, CSS & JS</h3>
+            <p style="text-align: center;">Web application and static web pages.</p>
+          </div>
+          <div class="skill-box d-flex flex-column align-items-center justify-content-end p-2">
+            <img class="img-fluid overflow-auto p-3" src="assets/Postgresql_elephant.svg" alt="">
+            <h3 style="text-align: center;">SQL & Non-SQL</h3>
+            <p style="text-align: center;">Back-end applications, server-side & DB.</p>
+          </div>
+      
+        </div>
+      </div>
     </section>
     <section id="port-sect" class="flex-layout">
       <h1>Portfolio</h1>

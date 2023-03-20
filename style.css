@@ -5,15 +5,75 @@
   --color-teal: #5dbcc1;
   --color-blue-teal: #1f4e66;
   --color-deep-blue: #17243d;
+
+  --color-pink-primary: #ff4665;
+
+  --horizontal-padding: 8%;
 }
 
-html, body {
+html,
+body {
   margin: 0;
-  height:100%;
-  width:100%;
-  padding:0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
 }
 
 * {
-  /* font-family: "Poppins, sans-serif"; */
+  font-family: "Asap", sans-serif;
+}
+
+.col {
+  border: 1px red solid;
+}
+
+/* ******* HOME SECTION ***************/
+#home-sect {
+  padding: 30px var(--horizontal-padding);
+  background: rgb(255, 240, 243);
+  background: linear-gradient(
+    135deg,
+    rgb(255, 255, 255) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(230, 248, 250, 1) 100%
+  );
+}
+
+.greeting-message h1:first-child {
+  color: var(--color-blue-teal);
+}
+
+.greeting-message h1:nth-child(2) {
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+
+.btn-primary {
+  background-color: var(--color-blue-teal);
+  border: none;
+}
+
+/* ******* SKILLS SECTION ***************/
+#skills-sect {
+  padding: 30px var(--horizontal-padding);
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.section-subtitle {
+  /* font-weight: bold; */
+  /* font-size: 3rem; */
+  text-align: center;
+  color: grey;
+}
+
+.skill-box {
+  background-color: white;
+  box-shadow: 0px 0px 20px 0px var(--color-grey);
+  height: 220px;
+  width: 220px;
 }
