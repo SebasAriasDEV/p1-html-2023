@@ -26,3 +26,9 @@
     background-color: var(--color-blue-teal);
     border: none;
   }
+
+  .btn-primary.disabled {
+    background-color: var(--color-grey);
+    border: none;
+    color: grey;
+  }
