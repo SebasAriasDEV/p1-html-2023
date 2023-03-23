@@ -27,6 +27,13 @@ body {
   border: 1px red solid;
 }
 
+
+
+/* ******* NAVBAR ***************/
+.navbar-custom {
+  background-color: var(--color-deep-blue) !important;
+}
+
 /* ******* SECTIONS GENERAL ***************/
 
 .section-title {
@@ -40,4 +47,5 @@ body {
   /* font-size: 3rem; */
   text-align: center;
   color: grey;
+  margin-bottom: 40px;
 }

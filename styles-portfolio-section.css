@@ -1,5 +1,5 @@
 #port-sect {
-    padding: 30px var(--horizontal-padding);
+    padding: var(--horizontal-padding);
   }
   
   .portfolio-box {
