@@ -24,7 +24,7 @@ body {
 }
 
 .col {
-  border: 1px red solid;
+  /* border: 1px red solid; */
 }
 
 
@@ -48,4 +48,14 @@ body {
   text-align: center;
   color: grey;
   margin-bottom: 40px;
+}
+
+
+/* ******* FOOTER ***************/
+footer {
+  color: grey;
+}
+
+footer h4 span {
+  color: var(--color-deep-blue);
 }
