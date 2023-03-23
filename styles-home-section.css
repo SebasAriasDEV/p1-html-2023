@@ -1,34 +1,37 @@
-
 /* ******* HOME SECTION ***************/
 #home-sect {
-    padding: var(--horizontal-padding);
-    /* background: rgb(255, 240, 243);
+  padding: var(--horizontal-padding);
+  /* background: rgb(255, 240, 243);
     background: linear-gradient(
       135deg,
       rgb(255, 255, 255) 0%,
       rgba(255, 255, 255, 1) 50%,
       rgba(230, 248, 250, 1) 100%
     ); */
-  }
-  
-  .greeting-message h1:first-child {
-    font-weight: 100;
-    color: var(--color-teal);
-  }
-  
-  .greeting-message h1:nth-child(2) {
-    font-weight: bold;
-    font-size: 3.5rem;
-    color: var(--color-deep-blue);
-  }
-  
-  .btn-primary {
-    background-color: var(--color-blue-teal);
-    border: none;
-  }
+}
 
-  .btn-primary.disabled {
-    background-color: var(--color-grey);
-    border: none;
-    color: grey;
-  }
+.greeting-message h1:first-child {
+  font-weight: 100;
+  color: var(--color-teal);
+}
+
+.greeting-message h1:nth-child(2) {
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: var(--color-deep-blue);
+}
+
+.btn-primary {
+  background-color: var(--color-blue-teal);
+  border: none;
+}
+
+.btn-primary.disabled {
+  background-color: var(--color-grey);
+  border: none;
+  color: grey;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-teal);
+}
